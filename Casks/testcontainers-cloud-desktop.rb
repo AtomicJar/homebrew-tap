@@ -1,5 +1,5 @@
 cask "testcontainers-cloud-desktop" do
-  version "1.3.23"
+  version :latest
   sha256 :no_check
 
   url "https://app.testcontainers.cloud/download/testcontainers-cloud-desktop_#{version}_darwin_universal.dmg"
