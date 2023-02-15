@@ -1,11 +1,18 @@
-# Atomicjar Testcontainers-cloud
+# Atomicjar Homebrew Tap
 
-## How do I install these formulae?
+More download options you can find on Testcontainers Cloud's web application [downloads](https://app.testcontainers.cloud/dashboard/install).
 
-`brew install atomicjar/testcontainers-cloud/<formula>`
+## Casks
 
-Or `brew tap atomicjar/testcontainers-cloud` and then `brew install <formula>`.
+`testcontainers-cloud-desktop` - Testcontainers Cloud Desktop application
 
-## Documentation
+```
+brew install atomicjar/tap/testcontainers-cloud-desktop
+```
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+### OR
+
+```
+brew tap atomicjar/tap
+brew install testcontainers-cloud-desktop
+```
