@@ -33,7 +33,8 @@ To check for new updates for any of the casks or formulae, run the following com
 
 If an update is available, you can open a pull request using the `brew bump/bump-cask-pr` command.
 
-`brew bump --cask --open-pr testcontainers-cloud-desktop`
+- Prepare authorization: `gh auth login`
+- Bump the version: `brew bump --cask --open-pr testcontainers-cloud-desktop`
 
 [homebrew_tap_badge]: https://img.shields.io/badge/brew%20tap-atomicjar/tap-orange?style=flat-square&logo=Homebrew&color=FBB040
 [homebrew_tap_url]: https://github.com/atomicjar/homebrew-tap
