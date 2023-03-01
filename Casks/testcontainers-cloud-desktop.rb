@@ -1,6 +1,6 @@
 cask "testcontainers-cloud-desktop" do
-  version "1.3.24"
-  sha256 "b97d89a6c1166f94d4b44bd0984f0743207f2057b30fd74b71d6e8564d3899e9"
+  version "1.3.25"
+  sha256 "4ac29609f8549b54579387f661fb239570049ea4296346652ff245ccf698b528"
 
   url "https://app.testcontainers.cloud/download/testcontainers-cloud-desktop_#{version}_darwin_universal.dmg"
   name "Testcontainers Cloud Client"
