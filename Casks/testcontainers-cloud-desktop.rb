@@ -1,6 +1,6 @@
 cask "testcontainers-cloud-desktop" do
-  version "1.3.35"
-  sha256 "c29e69c10bbe598a2425d1a4706f15db04fe6d28cfa88d329e953aff0cab3b98"
+  version "1.3.36"
+  sha256 "8e63e15074c2f0ee25e19ec4230aade203e914a41b4b8a3631c15ed2bd61be86"
 
   url "https://app.testcontainers.cloud/download/testcontainers-cloud-desktop_#{version}_darwin_universal.dmg",
       user_agent: "brew-cask"
