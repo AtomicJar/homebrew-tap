@@ -30,6 +30,7 @@ cask "testcontainers-cloud-desktop" do
             ]
 
   zap trash:  [
+        "~/.config/testcontainers"
         "~/Library/Application Support/testcontainers.cloud.desktop",
         "~/Library/Logs/AtomicJar",
       ],
