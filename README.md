@@ -38,3 +38,6 @@ If an update is available, you can open a pull request using the `brew bump/bump
 
 [homebrew_tap_badge]: https://img.shields.io/badge/brew%20tap-atomicjar/tap-orange?style=flat-square&logo=Homebrew&color=FBB040
 [homebrew_tap_url]: https://github.com/atomicjar/homebrew-tap
+
+## Known issues
+- https://github.com/orgs/Homebrew/discussions/4497
