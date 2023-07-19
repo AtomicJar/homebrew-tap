@@ -1,10 +1,10 @@
-cask "testcontainers-cloud-desktop" do
+cask "testcontainers-desktop" do
   version "1.4.1"
   sha256 "18b0e16199eea4e3bbb1cd94e58819324708b42f8887c6affff04e62ad7a6c13"
 
   url "https://app.testcontainers.cloud/download/testcontainers-cloud-desktop_#{version}_darwin_universal.dmg",
       user_agent: "brew-cask"
-  name "Testcontainers Cloud Client"
+  name "Testcontainers Desktop"
   desc "Client to connect testcontainers integration tests to Testcontainers Cloud"
   homepage "https://app.testcontainers.cloud/"
 
