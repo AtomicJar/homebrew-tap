@@ -22,6 +22,21 @@ cask "testcontainers-cloud-desktop" do
                    args: ["#{appdir}/Testcontainers Cloud Desktop.app"]
   end
 
+  caveats "
+  ******** WARNING *******
+  #{token} will no longer receive updates.
+
+  Please use testcontainers-desktop instead for a more fully-featured desktop experience!
+
+  Please run:
+
+  brew uninstall #{token}
+  brew install testcontainers-desktop
+
+  ******** WARNING *******
+
+  "
+
   uninstall delete: [
               "~/Library/Caches/AtomicJar",
             ],
