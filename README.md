@@ -2,24 +2,30 @@
 
 [![hombrew tap atomicjar][homebrew_tap_badge]][homebrew_tap_url]
 
-More download options you can find on Testcontainers Cloud's web application [downloads](https://app.testcontainers.cloud/dashboard/install).
+More installation options are available at [Testcontainers Desktop][tcd_landing] or the Testcontainers Cloud [downloads][web_downloads] page.
 
 ## Casks
 
-### `testcontainers-cloud-desktop`  <img src="https://img.shields.io/badge/testcontainers--cloud--desktop-latest-orange?style=flat-square&color=FBB040" align="right"/>
+### `testcontainers-desktop`  <img src="https://img.shields.io/badge/testcontainers--desktop-latest-orange?style=flat-square&color=FBB040" align="right"/>
 
-Testcontainers Cloud Desktop application
+Testcontainers Desktop application
 
 ```
-brew install atomicjar/tap/testcontainers-cloud-desktop
+brew install atomicjar/tap/testcontainers-desktop
 ```
 #### OR
 
 ```
 brew tap atomicjar/tap
-brew install testcontainers-cloud-desktop
+brew install testcontainers-desktop
 ```
 
+### Deprecated: `testcontainers-cloud-desktop`
+This cask is **deprecated** in favor of `testcontainers-desktop`. If you have `testcontainers-cloud-desktop` installed, please uninstall and migrate to the new cask:
+```
+brew uninstall testcontainers-cloud-desktop
+brew install testcontainers-desktop
+```
 
 ## Updating the version of the cask
 
@@ -34,10 +40,14 @@ To check for new updates for any of the casks or formulae, run the following com
 If an update is available, you can open a pull request using the `brew bump/bump-cask-pr` command.
 
 - Prepare authorization: `gh auth login`
-- Bump the version: `brew bump --cask --open-pr testcontainers-cloud-desktop`
-
-[homebrew_tap_badge]: https://img.shields.io/badge/brew%20tap-atomicjar/tap-orange?style=flat-square&logo=Homebrew&color=FBB040
-[homebrew_tap_url]: https://github.com/atomicjar/homebrew-tap
+- Bump the version: `brew bump --cask --open-pr testcontainers-desktop`
 
 ## Known issues
 - https://github.com/orgs/Homebrew/discussions/4497
+
+
+[homebrew_tap_badge]: https://img.shields.io/badge/brew%20tap-atomicjar/tap-orange?style=flat-square&logo=Homebrew&color=FBB040
+[homebrew_tap_url]: https://github.com/atomicjar/homebrew-tap
+[tcd_landing]: https://testcontainers.com/desktop/
+[web_downloads]: https://app.testcontainers.cloud/dashboard/install
+
