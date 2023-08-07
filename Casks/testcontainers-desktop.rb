@@ -24,15 +24,18 @@ cask "testcontainers-desktop" do
                    args: ["#{appdir}/Testcontainers Desktop.app"]
   end
 
-  uninstall delete: [
-              "~/Library/Caches/AtomicJar",
+ uninstall delete: [
+              "~/Library/Caches/AtomicJar/testcontainers.cloud.desktop/agent.lock",
+              "~/Library/Caches/AtomicJar/testcontainers.cloud.desktop/tcc-notification.png",
             ],
             quit:   [
               "com.atomicjar.desktop",
             ]
 
   zap trash:  [
-        "~/.config/testcontainers",
+        "~/.config/testcontainers/services",
+        "~/.config/testcontainers/cloud.properties",
+        "~/Library/Caches/AtomicJar",
         "~/Library/Logs/AtomicJar",
       ],
       delete: [
