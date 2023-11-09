@@ -33,6 +33,8 @@ This tap is a regular git repository and could be navigated using `cd $(brew --r
 
 Casks and formulae in this tap are checked for updates, and updates are applied manually once we release the new versions.
 
+### Updating with the `brew` CLI
+
 To check for new updates for any of the casks or formulae, run the following command:
 
 `brew livecheck --tap atomicjar/tap`
@@ -41,6 +43,13 @@ If an update is available, you can open a pull request using the `brew bump/bump
 
 - Prepare authorization: `gh auth login`
 - Bump the version: `brew bump --cask --open-pr testcontainers-desktop`
+
+### Updating manually
+
+To update the version manually you can directly edit `version` and `sha256` in the [cask file](Casks/testcontainers-desktop.rb). Run the following command with the correct `<version>` to compute the sha256:
+```
+wget -O - https://app.testcontainers.cloud/download/testcontainers-desktop_<version>_darwin_universal.dmg | shasum -a 256
+```
 
 ## Known issues
 - https://github.com/orgs/Homebrew/discussions/4497
