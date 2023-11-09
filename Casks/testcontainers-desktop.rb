@@ -1,14 +1,12 @@
 cask "testcontainers-desktop" do
-  version "1.5.1"
-  sha256 "1fe39fda594212551eeff4529477ee143770e76aa6109842f7ca5ece24367b73"
+  version "1.5.2"
+  sha256 "0769c1c91d1a3b6e52704e911335ac20d660da57789815d3ccc77ef8d085e1ea"
 
   url "https://app.testcontainers.cloud/download/testcontainers-desktop_#{version}_darwin_universal.dmg",
       user_agent: "brew-cask"
   name "Testcontainers Desktop"
   desc "Tescontainers desktop application for local testing and development"
   homepage "https://app.testcontainers.cloud/"
-
-  conflicts_with cask: "testcontainers-cloud-desktop"
 
   livecheck do
     url "https://app.testcontainers.cloud/api/versions"
@@ -17,6 +15,8 @@ cask "testcontainers-desktop" do
     end
   end
 
+  conflicts_with cask: "testcontainers-cloud-desktop"
+
   app "Testcontainers Desktop.app"
 
   postflight do
@@ -24,7 +24,7 @@ cask "testcontainers-desktop" do
                    args: ["#{appdir}/Testcontainers Desktop.app"]
   end
 
- uninstall delete: [
+  uninstall delete: [
               "~/Library/Caches/AtomicJar/testcontainers.cloud.desktop/agent.lock",
               "~/Library/Caches/AtomicJar/testcontainers.cloud.desktop/tcc-notification.png",
             ],
