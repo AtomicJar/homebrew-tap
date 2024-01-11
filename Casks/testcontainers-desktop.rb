@@ -15,6 +15,7 @@ cask "testcontainers-desktop" do
     end
   end
 
+  auto_updates true
   conflicts_with cask: "testcontainers-cloud-desktop"
 
   app "Testcontainers Desktop.app"
