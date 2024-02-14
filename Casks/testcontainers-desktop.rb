@@ -1,6 +1,6 @@
 cask "testcontainers-desktop" do
-  version "1.7.0"
-  sha256 "0a4b325f584515a67e3f4ed5717d9d96dd97fe1d7de58b5dbf66c426ba007b8b"
+  version "1.8.0"
+  sha256 "0760cf82e922a67b54dffea458f15e5f023b732441b616b503c84f1d006fef84"
 
   url "https://app.testcontainers.cloud/download/testcontainers-desktop_#{version}_darwin_universal.dmg",
       user_agent: "brew-cask"
@@ -25,21 +25,17 @@ cask "testcontainers-desktop" do
                    args: ["#{appdir}/Testcontainers Desktop.app"]
   end
 
-  uninstall delete: [
+  uninstall quit:   "com.atomicjar.desktop",
+            delete: [
               "~/Library/Caches/AtomicJar/testcontainers.cloud.desktop/agent.lock",
               "~/Library/Caches/AtomicJar/testcontainers.cloud.desktop/tcc-notification.png",
-            ],
-            quit:   [
-              "com.atomicjar.desktop",
             ]
 
-  zap trash:  [
-        "~/.config/testcontainers/services",
+  zap delete: "~/Library/LaunchAgents/testcontainers.desktop.plist",
+      trash:  [
         "~/.config/testcontainers/cloud.properties",
+        "~/.config/testcontainers/services",
         "~/Library/Caches/AtomicJar",
         "~/Library/Logs/AtomicJar",
-      ],
-      delete: [
-        "~/Library/LaunchAgents/testcontainers.desktop.plist",
       ]
 end
