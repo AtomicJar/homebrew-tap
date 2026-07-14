@@ -1,6 +1,6 @@
 cask "testcontainers-desktop" do
-  version "1.25.0"
-  sha256 "e77acade41f71197737796c811fa589ac7287113c2ff5783cb03db7315f68231"
+  version "1.26.0"
+  sha256 "f43d2d966f662659b53b9aa5f18363a6603e7f5d9105ed356730f38881140932"
 
   url "https://app.testcontainers.cloud/download/testcontainers-desktop_#{version}_darwin_universal.dmg",
       user_agent: "brew-cask"
@@ -17,6 +17,7 @@ cask "testcontainers-desktop" do
 
   auto_updates true
   conflicts_with cask: "testcontainers-cloud-desktop"
+  depends_on :macos
 
   app "Testcontainers Desktop.app"
 
