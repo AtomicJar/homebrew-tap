@@ -21,9 +21,8 @@ cask "testcontainers-desktop" do
 
   app "Testcontainers Desktop.app"
 
-  postflight do
-    system_command "open",
-                   args: ["#{appdir}/Testcontainers Desktop.app"]
+  postflight_steps do
+    run "/usr/bin/open", args: ["{{appdir}}/Testcontainers Desktop.app"]
   end
 
   uninstall quit:   "com.atomicjar.desktop",
