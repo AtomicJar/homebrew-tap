@@ -17,8 +17,12 @@ brew install atomicjar/tap/testcontainers-desktop
 
 ```
 brew tap atomicjar/tap
+brew trust --cask atomicjar/tap/testcontainers-desktop
 brew install testcontainers-desktop
 ```
+
+Homebrew requires explicit trust before installing a cask by its short name.
+The command above trusts only `testcontainers-desktop`; see [Homebrew's tap trust documentation](https://docs.brew.sh/Tap-Trust).
 
 ### Deprecated: `testcontainers-cloud-desktop`
 This cask is **deprecated** in favor of `testcontainers-desktop`. If you have `testcontainers-cloud-desktop` installed, please uninstall and migrate to the new cask:
