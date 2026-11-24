@@ -21,10 +21,6 @@ cask "testcontainers-desktop" do
 
   app "Testcontainers Desktop.app"
 
-  postflight_steps do
-    run "/usr/bin/open", args: ["{{appdir}}/Testcontainers Desktop.app"]
-  end
-
   uninstall quit:   "com.atomicjar.desktop",
             delete: [
               "~/Library/Caches/AtomicJar/testcontainers.cloud.desktop/agent.lock",
